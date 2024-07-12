@@ -1,0 +1,33 @@
+Nome del progetto: Alexandria
+Tipo: Dynamic web project
+
+Packages:
+
+		MODEL
+
+		com.generation.alexandria.model
+				Book.java (Entity)
+		com.generation.alexandria.repository
+				BookRepository.java	(Interfaccia, fornita e completa così com'è)
+				MockBookRepository.java (Classe mock, da completare)
+				
+			
+		CONTROLLER
+		
+		com.generation.alexandria.controller
+			ReadAll.java, Servlet, NON RICHIEDE PARAMETRI,
+						  passa come attributo il risultato di findAll() di BookRepository
+						  
+			ReadByGenre.java, Servlet, richiedere come parametro Genre,
+						  passa come attributo il risultato di findByGenre()
+						  
+			ReadByGenreAndMaxPrice.java, Servlet, due parametri... 
+						  e direi che potete immaginare voi...
+						  
+			ReadById, Servlet, parametro id
+						  passa come parametro un id, 
+						  passa come attributo un solo libro alla jsp
+						  
+		VIEW
+			Per adesso, una view per ogni servlet.
+			Assicurarsi che a ogni view arrivino gli attributi giusti.

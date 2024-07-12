@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+
+/**
+* queste regole si applicano agli elementi H1 e agli elementi DIV
+*/
+
+BODY
+{
+	background-color:#FCFFF8;
+}
+
+H1
+{
+	padding-left:20px;
+}
+
+H3
+{
+	font-weight:bold;
+	
+}
+
+#logo
+{
+	width:100%;
+	height:auto;	
+}
+
+#menu 
+{
+	text-align:center;	
+}
+/*
+* gli elementi di tipo A contenuti dentro l'elemento con id=menu
+* display:block => ogni link del menù starà sulla sua riga
+*/
+#menu A
+{
+	display:block; 
+	text-decoration:none;
+	margin-top:10px;	
+}
+
+#menu A:hover
+{
+	color:#29F;
+}
